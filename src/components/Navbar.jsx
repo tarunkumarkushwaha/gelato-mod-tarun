@@ -8,7 +8,7 @@ import InputIcon from '@mui/icons-material/Input';
 const Navbar = () => {
     const [sidebar, setSidebar] = useState(false)
 
-    let menuItems = ['Products', 'Start selling', 'Tools and apps', 'Pricing', 'Resources', 'Pro sellers', 'GelatoConnect']
+    let menuItems = ['Products', 'Start selling', 'Tools and apps', 'Pricing', 'Resources', 'GelatoConnect']
 
     const toggleNav = function () {
         setSidebar(!sidebar)
@@ -52,27 +52,27 @@ const Navbar = () => {
                                 </div>
                                 <button className='bg-slate-800 hover:text-blue-300 m-2 text-yellow-50 rounded-xl text-xs p-2'>Sign Up for Free</button>
                             </div>
-                            {/* <div className="md:flex items-center mt-2 hidden">
-                                <input type="search" 
-                                    className="block outline-none w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50"
-                                    placeholder="Search " />
-                            </div> */}
                         </div>
                     </>
                     <div className="mx-8 md:flex hidden justify-center items-center">
                         <ul
                             className="flex font-semibold md:justify-between justify-center items-center md:flex-row flex-col gap-5">
                             {menuItems.map(i => (
-                                <li className="text-black cursor-pointer hover:text-indigo-400 relative group">{i}
+                                <li className="text-black transition-all duration-200 ease-in-out cursor-pointer hover:text-indigo-400 relative group">{i}
                                     <ul
                                         className="absolute rounded-xl hidden hover:block group-hover:block bg-gray-200 text-black py-2 shadow-lg">
-                                        <li className="px-4 w-80 py-2 hover:bg-indigo-400">Clothings</li>
-                                        <li className="px-4 w-80 py-2 hover:bg-indigo-400">Cards</li>
-                                        <li className="px-4 w-80 py-2 hover:bg-indigo-400">Photobooks</li>
+                                        <li className="px-4 w-80 py-2 bg-indigo-100 transition-all duration-500 ease-in-out hover:bg-indigo-400">Clothings</li>
+                                        <li className="px-4 w-80 py-2 bg-indigo-100 transition-all duration-500 ease-in-out hover:bg-indigo-400">Cards</li>
+                                        <li className="px-4 w-80 py-2 bg-indigo-100 transition-all duration-500 ease-in-out hover:bg-indigo-400">Photobooks</li>
                                     </ul>
                                 </li>
                             ))}
                         </ul>
+                        <div className="md:flex items-center mt-2 hidden">
+                                <input type="search" 
+                                    className="block outline-none w-full p-2 m-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-2xl bg-gray-50"
+                                    placeholder="Search " />
+                            </div>
                     </div>
                 </nav>
             </header>

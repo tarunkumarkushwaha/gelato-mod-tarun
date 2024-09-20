@@ -7,6 +7,7 @@ const SideBar = ({ sidebar, toggleNav }) => {
     const menuRef = useRef();
 
     const closeOpenMenus = useCallback(
+        // to detect clickks outsides sidebar 
         (e) => {
             if (
                 menuRef.current &&
@@ -49,6 +50,7 @@ const SideBar = ({ sidebar, toggleNav }) => {
                             </div>
                             <ul
                                 className="absolute z-40 rounded-xl hidden hover:block group-hover:block bg-gray-300 text-black py-2 shadow-lg">
+                                {/* dummy text  */}
                                 <li className="px-4 md:w-72 w-60 py-2 hover:bg-indigo-400">Clothings</li>
                                 <li className="px-4 md:w-72 w-60 py-2 hover:bg-indigo-400">Cards</li>
                                 <li className="px-4 md:w-72 w-60 py-2 hover:bg-indigo-400">Photobooks</li>

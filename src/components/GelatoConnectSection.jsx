@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 
+// checking the viewport 
+
 const isInViewport = (element) => {
     const rect = element.getBoundingClientRect();
     return (
@@ -20,12 +22,12 @@ const GelatoConnectSection = () => {
             let Div = DivRef.current;
             console.log(isInViewport(elementRef.current));
             if (isInViewport(elementRef.current)) {
-                // slide in 
+                // fade in 
                 Div.classList.remove('opacity-0');;
                 Div.classList.add('opacity-100');
             }
             else {
-                // slide out
+                // fade out
                 Div.classList.remove('opacity-100');
                 Div.classList.add('opacity-0');
             }
@@ -33,6 +35,7 @@ const GelatoConnectSection = () => {
     };
 
     useEffect(() => {
+        // tracking element on scroll 
         window.addEventListener('scroll', handleScroll);
         handleScroll();
 

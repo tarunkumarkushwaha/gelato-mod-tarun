@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 const isInViewport = (element) => {
+    // tractingg viewport 
     const rect = element.getBoundingClientRect();
     return (
         rect.top >= 0 &&
