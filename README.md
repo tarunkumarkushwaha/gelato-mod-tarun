@@ -16,3 +16,4 @@ run following commands
    npm i 
    npm run dev
 
+any suggestions create pr

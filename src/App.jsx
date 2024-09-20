@@ -8,7 +8,7 @@ import GelatoConnectSection from './components/GelatoConnectSection'
 
 function App() {
 
-  // section 1 
+  // section 1  texts
   const benefits = [
     {
       title: "World's largest print-on-demand network",
@@ -70,6 +70,7 @@ function App() {
     <>
       <Navbar />
       <HeroSection />
+      {/* sending an object with image url and html element via prop to put in left and right side of sections  */}
       <SectionWithImage element={section1} />
       <SectionWithImage element={section2}/>
       <GelatoConnectSection/>

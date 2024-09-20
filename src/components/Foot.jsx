@@ -3,6 +3,7 @@ import React from 'react'
 const Foot = () => {
   return (
     <>
+    {/* {similar to my another page} */}
     <footer className="bg-gray-900 text-white flex flex-col sm:flex-row justify-between items-center">
        more 
         <div className="gap-2 m-3 flex justify-center items-center">
